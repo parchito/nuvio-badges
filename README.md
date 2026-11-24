@@ -1,17 +1,29 @@
-# Nuvio Badges · Metal
+# Nuvio Badges
 
-An original set of 34 stream badges for Nuvio, in a gold, silver, bronze and steel finish.
+Two original sets of 45 stream badges for Nuvio: **Metal** and **Glass**. Same badges and matching rules, different look. Install one.
 
-Gold marks the top tier (4K, REMUX, Dolby Vision, Atmos, TrueHD, DTS:X), silver the high tier, bronze the mid tier, and steel the basics.
+Each set covers source, resolution, HDR, codec, bit depth, audio format, channels, plus audio language and subtitles (Latino, Castellano, Español, English, Japanese, Dual Audio, Multi Audio, Multi-Sub, Spanish/English subs, Hardsub).
 
-## Use it
+Tiers: gold marks the top (4K, REMUX, Dolby Vision, Atmos, TrueHD, DTS:X, Latino, Dual Audio), then silver, bronze and steel for the basics.
 
-Paste this URL where Nuvio asks for a badge pack:
+## Metal
 
 ```
 https://raw.githubusercontent.com/parchito/nuvio-badges/main/metal.json
 ```
 
-![Preview](preview.png)
+![Metal preview](preview.png)
 
-Badge names describe audio and video formats only. All trademarks belong to their owners; no logos are used.
+## Glass
+
+```
+https://raw.githubusercontent.com/parchito/nuvio-badges/main/glass.json
+```
+
+![Glass preview](preview-glass.png)
+
+## Use it
+
+Paste one URL where Nuvio asks for a badge pack, then restart the app.
+
+Badge names describe audio, video and language formats only. All trademarks belong to their owners; no logos are used.

@@ -48,6 +48,20 @@
    "color": "#00000000",
    "borderColor": "#00000000",
    "isExpanded": true
+  },
+  {
+   "id": "language",
+   "name": "Language",
+   "color": "#00000000",
+   "borderColor": "#00000000",
+   "isExpanded": true
+  },
+  {
+   "id": "subtitles",
+   "name": "Subtitles",
+   "color": "#00000000",
+   "borderColor": "#00000000",
+   "isExpanded": true
   }
  ],
  "filters": [
@@ -492,6 +506,149 @@
    "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/ch20.webp",
    "isEnabled": true,
    "groupId": "audio-channels"
+  },
+  {
+   "type": "filter",
+   "id": "latino",
+   "name": "Latino Spanish",
+   "pattern": "(?i)(?:\\blatino\\b|\\blatam\\b|🇲🇽|\\bspa(?:nish)?[\\s._-]?lat(?:ino)?\\b|\\besp[\\s._-]?lat(?:ino)?\\b|\\bes[\\s._-]?mx\\b)",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/latino.webp",
+   "isEnabled": true,
+   "groupId": "language"
+  },
+  {
+   "type": "filter",
+   "id": "castellano",
+   "name": "Castellano Spain",
+   "pattern": "(?i)(?:\\bcastellano\\b|🇪🇸|\\bspa(?:nish)?[\\s._-]?(?:spain|cast)\\b|\\bes[\\s._-]?es\\b)",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/castellano.webp",
+   "isEnabled": true,
+   "groupId": "language"
+  },
+  {
+   "type": "filter",
+   "id": "spanish",
+   "name": "Spanish Audio",
+   "pattern": "(?i)^(?=.*(?:\\bspanish\\b|\\bespa[nñ]ol\\b|\\besp\\b|\\bspa\\b))(?!.*(?:latino|latam|🇲🇽|castellano|🇪🇸|\\bsubs?[\\s._-]?(?:esp|spa|spanish)))",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/spanish.webp",
+   "isEnabled": true,
+   "groupId": "language"
+  },
+  {
+   "type": "filter",
+   "id": "english",
+   "name": "English Audio",
+   "pattern": "(?i)^(?=.*(?:\\benglish\\b|\\beng\\b|🇬🇧|🇺🇸))(?!.*\\bsubs?[\\s._-]?(?:eng|english)\\b)",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/english.webp",
+   "isEnabled": true,
+   "groupId": "language"
+  },
+  {
+   "type": "filter",
+   "id": "japanese",
+   "name": "Japanese Audio",
+   "pattern": "(?i)(?:\\bjapanese\\b|\\bjpn?\\b|🇯🇵)",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/japanese.webp",
+   "isEnabled": true,
+   "groupId": "language"
+  },
+  {
+   "type": "filter",
+   "id": "dual",
+   "name": "Dual Audio",
+   "pattern": "(?i)\\bdual[\\s._-]?(?:audio|lat|lang|latino)?\\b",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/dual.webp",
+   "isEnabled": true,
+   "groupId": "language"
+  },
+  {
+   "type": "filter",
+   "id": "multi",
+   "name": "Multi Audio",
+   "pattern": "(?i)^(?=.*\\bmulti(?:[\\s._-]?(?:audio|lang|language|dub))?\\b)(?!.*\\bmulti[\\s._-]?subs?\\b)",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/multi.webp",
+   "isEnabled": true,
+   "groupId": "language"
+  },
+  {
+   "type": "filter",
+   "id": "multisub",
+   "name": "Multi-Sub Subtitles",
+   "pattern": "(?i)\\bmulti[\\s._-]?subs?\\b",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/multisub.webp",
+   "isEnabled": true,
+   "groupId": "subtitles"
+  },
+  {
+   "type": "filter",
+   "id": "subes",
+   "name": "Spanish Subtitles",
+   "pattern": "(?i)(?:\\bsubs?[\\s._-]?(?:esp|spa|spanish|espa[nñ]ol|latino)\\b|\\bsubtitulad[oa]\\b|\\bvose\\b)",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/subes.webp",
+   "isEnabled": true,
+   "groupId": "subtitles"
+  },
+  {
+   "type": "filter",
+   "id": "suben",
+   "name": "English Subtitles",
+   "pattern": "(?i)(?:\\besubs?\\b|\\bsubs?[\\s._-]?(?:eng|english)\\b)",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/suben.webp",
+   "isEnabled": true,
+   "groupId": "subtitles"
+  },
+  {
+   "type": "filter",
+   "id": "hardsub",
+   "name": "Hardsub Burned In",
+   "pattern": "(?i)\\bhard[\\s._-]?(?:subs?|coded)\\b",
+   "tagColor": "#00000000",
+   "borderColor": "#00000000",
+   "textColor": "#00000000",
+   "tagStyle": "filled",
+   "imageURL": "https://raw.githubusercontent.com/parchito/nuvio-badges/main/badges/hardsub.webp",
+   "isEnabled": true,
+   "groupId": "subtitles"
   }
  ]
 }
